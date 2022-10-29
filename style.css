@@ -2,6 +2,14 @@
     margin: 0;
     padding: 0;
 }
+.container{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: pink;
+}
 #clockContainer{
     position: relative;
     margin: auto;
@@ -37,4 +45,16 @@
     top: 11%;
     left: 48.7%;
     opacity: 0.8;
+}
+@media (max-width:800px) {
+    #clockContainer{
+        height: 50vw;
+        width: 50vw;
+    }
+}
+@media (max-width:500px) {
+    #clockContainer{
+        height: 80vw;
+        width: 80vw;
+    }
 }
